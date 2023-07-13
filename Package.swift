@@ -27,7 +27,8 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-openapi-runtime", .upToNextMinor(from: "0.1.3")),
+        // Use rboyce fork for OpenAPIObjectContainer fixes
+        .package(url: "https://github.com/rboyce/swift-openapi-runtime", branch: "anyValueContainer"),
         .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
     ],
     targets: [
